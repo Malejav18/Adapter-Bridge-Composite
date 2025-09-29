@@ -6,20 +6,26 @@ package Remotes;
 import Devices.Device;
 /**
  *
- * @author maleja
+ * @author Lopez, Vargas
+ * 
+ * Implementación de un control remoto básico
+ * Clase que implementa la interfaz Remote.
+ * 
+ * Representa un control remoto básico que interactúa con un dispositivo 
+ * mediante los métodos definidos en la interfaz Device.
  */
 
 public class BasicRemote implements Remote {
-    protected Device device;
+    protected Device device; // Referencia al dispositivo que será controlado
 
-    public BasicRemote() {}
+    public BasicRemote() {} // Constructor vacío, útil si se quiere asignar el dispositivo después
 
-    public BasicRemote(Device device) {
+    public BasicRemote(Device device) { // Constructor que inicializa el control remoto con un dispositivo específico
         this.device = device;
     }
 
     @Override
-    public void power() {
+    public void power() { // Alterna el estado del dispositivo
         System.out.println("Remote: power toggle");
         if (device.isEnabled()) {
             device.disable();
@@ -29,25 +35,25 @@ public class BasicRemote implements Remote {
     }
 
     @Override
-    public void volumeDown() {
+    public void volumeDown() { // Baja el volumen en 10 unidades
         System.out.println("Remote: volume down");
         device.setVolume(device.getVolume() - 10);
     }
 
     @Override
-    public void volumeUp() {
+    public void volumeUp() { // Sube el volumen en 10 unidades
         System.out.println("Remote: volume up");
         device.setVolume(device.getVolume() + 10);
     }
 
     @Override
-    public void channelDown() {
+    public void channelDown() { // Disminuye el canal actual en 1
         System.out.println("Remote: channel down");
         device.setChannel(device.getChannel() - 1);
     }
 
     @Override
-    public void channelUp() {
+    public void channelUp() { // Aumenta el canal actual en 1
         System.out.println("Remote: channel up");
         device.setChannel(device.getChannel() + 1);
     }
