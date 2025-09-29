@@ -5,7 +5,8 @@
 
 /**
  *
- * @author maleja
+ * @author Lopez, Vargas
+ * 
  * Método main para ejecutar y probar la implementación 
  * del patrón Bridge usando diferentes dispositivos (Tv, Radio) y diferentes 
  * controles remotos (BasicRemote, AdvancedRemote).
