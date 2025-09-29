@@ -28,12 +28,12 @@ abstract class BaseShape implements Shape {
 
     // Métodos de la interfaz Shape
     @Override
-    public int getX() { // Obtener la posicion en X
+    public int getX() { // Devuelve la posicion en X
         return x;
     }
 
     @Override
-    public int getY() { // Obtener la posicion en Y
+    public int getY() { // Devuelve la posicion en Y
         return y;
     }
 
