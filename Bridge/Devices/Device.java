@@ -6,7 +6,7 @@ package Devices;
 
 /**
  *
- * @author maleja
+ * @author Lopez, Vargas
  * 
  * Define las operaciones básicas que debe implementar 
  * cualquier dispositivo
