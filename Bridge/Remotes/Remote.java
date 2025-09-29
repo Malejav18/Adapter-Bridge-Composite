@@ -6,7 +6,7 @@ package Remotes;
 
 /**
  *
- * @author maleja
+ * @author Lopez, Vargas
  * 
  * Interfaz Remote que define las operaciones básicas de un control remoto.
  * 
