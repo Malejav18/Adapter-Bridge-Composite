@@ -7,22 +7,25 @@ package Devices;
 /**
  *
  * @author maleja
+ * 
+ * Define las operaciones básicas que debe implementar 
+ * cualquier dispositivo
  */
 
 public interface Device {
-    boolean isEnabled();
+    boolean isEnabled(); //Indica si el dispositivo está encendido o apagado
 
-    void enable();
+    void enable(); // Enciende el dispositivo
 
-    void disable();
+    void disable(); // Apaga el dispositivo
 
-    int getVolume();
+    int getVolume(); // Devuelve el volumen actual
 
-    void setVolume(int percent);
+    void setVolume(int percent); // Establece un nuevo nivel de volumen
 
-    int getChannel();
+    int getChannel(); // Devuelve el canal actual
 
-    void setChannel(int channel);
+    void setChannel(int channel); // Cambia el canal
 
-    void printStatus();
+    void printStatus(); // Imprime en consola el estado actual
 }
