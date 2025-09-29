@@ -6,7 +6,7 @@ package Devices;
 
 /**
  *
- * @author maleja
+ * @author Lopez, Vargas
  * 
  * Representa un dispositivo concreto que puede ser 
  * controlado por un control remoto (abstracción).
